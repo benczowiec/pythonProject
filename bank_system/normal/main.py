@@ -33,7 +33,7 @@ client5.withdraw(Decimal('750'))
 client5.withdraw(Decimal('200.50'))
 
 client6.deposit(Decimal('1200'))
-client6.withdraw(Decimal('100'))
+client6.withdraw(Decimal('3100'))
 client6.withdraw(Decimal('60.75'))
 
 client1.print_statement()

@@ -1,5 +1,5 @@
 from bank_system.dataclasses.exceptions.client_not_found_error import ClientNotFoundError
-from bank_system.normal.domain.client import Client
+from bank_system.dataclasses.domain.client import Client
 
 from dataclasses import dataclass, field
 
@@ -23,3 +23,11 @@ class Bank:
     def print_all_clients_balances(self):
         for client in self._clients:
             print(client)
+
+    @property
+    def clients(self):
+        return self._clients
+
+    @clients.setter
+    def clients(self, clients: set[Client]):
+        self._clients = clients

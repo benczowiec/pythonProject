@@ -1,9 +1,12 @@
 from decimal import Decimal
 
-from bank_system.normal.domain.bank import Bank
-from bank_system.normal.domain.client import Client
+from bank_system.dataclasses.domain.client import Client
+from bank_system.dataclasses.domain.bank import Bank
+
 
 bank = Bank()
+
+client = Client("sds")
 
 client1 = Client("Paweł")
 client2 = Client("Gosia")
